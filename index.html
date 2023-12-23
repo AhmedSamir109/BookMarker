@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    
+  <header class=" text-white ">
+     <div class="container m-auto  ">
+    
+       <h1 class="text-center py-5 my-2 ">Bookmarker</h1>
+      
+       
+          <div class="content-container p-3 py-5 " >
+               <h2 class="text-center py-2"><i class="fa-solid fa-bookmark px-2 fs-4"></i>Bookmark Your Favorite Sites</h2>
+              
+               <label for="nameInput" class="py-2 "> <i class="fa-solid fa-book-bookmark px-2 "></i> Site Name </label>
+               <input type="text" id="nameInput" class="form-control mb-4 ">
+              
+              
+               <label for="urlInput"  class="py-2 "> <i class="fa-solid fa-link px-2 "></i> Site URL </label>
+               <input type="email" class="form-control mb-4" id="urlInput">
+              
+              
+                <button class="d-block m-auto btn btn-danger px-5 py-1" onclick="createBookmark()" >Submit</button>
+          </div>
+         
+          <div class="table-responsive my-5 ">
+              <table class="table table-hover text-center ">
+                  <thead>
+                      <tr>
+                          <th scope="col">Index</th>
+                          <th scope="col">Website Name</th>
+                          <th scope="col">Visit</th>
+                          <th scope="col">Delete</th>
+                      </tr>
+                  </thead>
+    
+    
+                  <tbody id="tbody">
+                      
+                       <!-- <tr class="">
+                          <td>R1C1</td>
+                          <td>R1C1</td>
+                          <td>
+                            <button class="btn btn-dark px-4 ">
+                                <i class="fa-solid fa-eye px-1 "></i> Visit
+                             </button>
+                         </td>
+                          <td>
+                            <button class="btn btn-danger px-4 "> 
+                                <i class="fa-solid fa-trash px-1"></i> Delete
+                             </button>
+                        </td>
+                      </tr> -->
+                   
+                      
+                      
+                  </tbody> 
+              </table>
+          </div>
+          
+    
+       </div>
+      
+      
+      
+  </header >
+   
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
